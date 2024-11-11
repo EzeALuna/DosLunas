@@ -1,7 +1,33 @@
-<form action="https://formspree.io/f/meqyajay" method="POST">
-    <input type="text" name="nombre" id="nombre" placeholder="Escribe tu nombre">
-    <input type="email" name="email" id="email" placeholder="Escribe tu email">
-    <textarea name="mensaje" id="mensaje" rows="4" cols="50" placeholder="Escribe tu 
-   mensaje"></textarea>
-    <button type="submit">Enviar</button>
-   </form
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>Contacto</h1>
+    <form action="https://formspree.io/f/xpwzrrww" method="POST">
+        <label for="">Nombre</label>
+        <input type="text" name="nombre" id="nombre" placeholder="Escribe tu nombre" required>
+        <label for="">Email</label>
+        <input type="email" name="email" id="email" placeholder="Escribe tu email" >
+        <label for="">Cel</label>
+        <input type="number" name="cel" id="cel" placeholder="Escribe tu celular" required>
+        <label for="">Archivo</label>
+        <input type="file" name="archivo" id="archivo">
+        <textarea name="mensaje" id="mensaje" rows="4" cols="50" placeholder="Escribe tu consulta" required></textarea>
+        <button type="submit">Enviar</button>
+        <label for="">Cotizar</label>
+        <input type="radio" id="mensaje" name="mensaje" value="Cotizar">
+        <label for="">Consulta</label>
+        <input type="radio" id="mensaje" name="mensaje" value="Consulta">
+        <label for="">Reponder por:</label>
+        <label for="">Cel</label>
+        <input type="checkbox" id="respuesta" name="respuesta" value="Cel">
+        <label for="">Email</label>
+        <input type="checkbox" id="respuesta" name="respuesta" value="Email">
+       </form
+</body>
+</html>
