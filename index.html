@@ -4,48 +4,53 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="CSS/estilo.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Tint&family=Cairo+Play:wght@200..1000&family=Caveat+Brush&family=Honk&family=Kalnia+Glaze:wght@100..700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/087fa2cc75.js" crossorigin="anonymous"></script>
     <title>Dos Lunas</title>
 </head>
 <body>
     <header>
         <img src="Logo.jpg" alt="Logo" width="600" height="400">
         <h1>Dos Lunas</h1>
-        <h2>"Creatividad que conecta"
-        <h2>"Impulsamos tu marca, creamos tu historia"</h2> 
-        <h2>"Tu marca, nuestra inspiración"</h2> 
-        <h2>"Transformando ideas en experiencias"</h2> 
-        <h2>"Creación visual y digital a otro nivel"</h2>
+        <h2 class="honk">Creatividad que conecta
+        <!--<h2 class="honk">"Impulsamos tu marca, creamos tu historia"</h2> 
+        <h2 class="kalnia-glaze">"Tu marca, nuestra inspiración"</h2> 
+        <h2 class="kalnia-glaze">"Transformando ideas en experiencias"</h2> 
+        <h2 class="kalnia-glaze">"Creación visual y digital a otro nivel"</h2>-->
     </header>
-    <nav>
-        <dl>
-            <dt>Inicio</dt>
-            <dd>Vamos al inicio.</dd>
-            <dt>Servicios</dt>
-            <dd>Vamos a los servicios</dd>
-            <dt>Contacto</dt>
-            <dd>Vamos al <a href="#footer">Contacto</a></dd>
-            </dl>
+    <nav> <h2>Nuestros Servicios</h2>
+        <dl class="contenedor">
+            <dd><a href="/contacto.html" class="honk">Subliamdos</a>.</dd>
+            <dd><a href="/contacto.html" class="honk">Digital</a></dd>
+            <dd><a href="/contacto.html" class="honk">Contacto</a></dd>
+        </dl>
     </nav>
-    <main>  
-        <p>"Creemos en el poder de la <b>personalización y la creatividad </b> para dar vida a las ideas de nuestros clientes.
+    <div class="main">  
+        <p class="cairo-play">"Creemos en el poder de la <b>personalización y la creatividad </b> para dar vida a las ideas de nuestros clientes.
             Nos dedicamos a ofrecer servicios de sublimados y diseño impreso que llevan cualquier proyecto a un nivel visual y artístico excepcional. 
             Sabemos que cada marca y persona es única, y por eso nos esforzamos en capturar esa esencia en cada producto que entregamos.
             Además, brindamos servicios de <b>diseño y desarrollo web</b> para ayudar a tu negocio a destacar en el entorno digital.
             Y para aquellos que buscan fortalecer su presencia en redes sociales, ofrecemos <b>community management profesional</b>.
             Nos ocupamos de desarrollar contenido que conecta y crea una comunidad, gestionando las redes de forma que el mensaje llegue de la manera más auténtica y efectiva posible.
             En Dos Lunas, no solo brindamos servicios: estamos comprometidos con construir experiencias y relaciones duraderas."</p>
-      /*  <section>
+      <!--  <section>
             <video controls poster="preview.jpg" width="600" height="400">
                     <source src="video.mp4" type="video/mp4">
                     <track src="subtitulos.vtt" kind="subtitles" srclang="es" label="Español">
                     Tu navegador no soporta la reproducción de video.
                     </video>
             </video>
-        </section>*/
-    </main>
+        </section>-->
+    </div>
     <footer id="footer">
-    <p> <a href="/contacto.html"> Contactanos </a>
-        Seguinos
-    </p></footer>
+    <div  class="honk">
+        <h3>Seguinos</h3>
+        <i class="fa-brands fa-square-whatsapp fa-bounce" style="color: #f05400; height:20vh"></i>
+        <i class="fa-brands fa-tiktok fa-bounce" style="color: #74C0FC; height:40vh"></i>
+        <i class="fa-brands fa-square-instagram fa-bounce" style="color: #ffd43b; height:20vh"></i>
+    </div>
+    </footer>
 </body>
 </html>

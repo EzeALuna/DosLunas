@@ -1,9 +1,72 @@
 * {
 margin: 0%;
 padding: 0%;
+box-sizing: border-box;
 }
-
+body{
+    background-color: rgba(221, 235, 245, 1);
+}
 header{
-    background-color: #61c1d2;
+    background-color: rgba(97, 193, 210, 0.7 );
+    color: #fdfcfd;
+    width: 100vw;
+    height: 15vh;
+    text-align: center;
+}
+.main{
+  background-color: rgba(97, 193, 210, 0.7 );
     color: #fdfcfd;
 }
+footer{
+    background-color: rgba(181, 139, 245, 0.5 );
+    color: #fdfcfd;
+    width: 10vw;
+    height: 10vh;
+    text-align: center;
+    margin: auto;
+}
+.contenedor{
+  display: flex;
+}
+dd{
+    background-color: coral;
+    text-align: center;
+    margin: auto;
+}
+nav{
+  text-align: center;
+  margin: auto;
+}
+.map{
+  text-align: center;
+}
+/*<weight>: Use a value from 200 to 1000*/
+.cairo-play{
+  font-family: "Cairo Play", serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
+  font-variation-settings: "slnt" 0;
+}
+.honk {
+    font-family: "Honk", system-ui;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+      "MORF" 15,
+      "SHLN" 50;
+  }
+  /*<weight>: Use a value from 100 to 700*/
+  .kalnia-glaze {
+    font-family: "Kalnia Glaze", serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+  }
+  .bungee-tint-regular {
+    font-family: "Bungee Tint", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
