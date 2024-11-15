@@ -165,7 +165,9 @@ footer {
   border-top: 1px solid #4a5568;
   width: 100%;
 }
-
+.map{
+  text-align: center;
+}
 /* Carrusel */
 .carousel {
   position: relative;
@@ -217,32 +219,32 @@ footer {
   border-radius: 8px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   max-width: 500px;
-  margin: 2rem auto;
+  margin: 5rem auto;
 }
 
 .contact-form h2 {
   text-align: center;
   color: #4a5568;
-  margin-bottom: 1.5rem;
+  margin-bottom: 5%;
 }
 
 .form-group {
-  margin-bottom: 1rem;
+  margin-bottom: 3%;
 }
 
 .form-group label {
   display: block;
-  margin-bottom: 0.5rem;
+  margin-bottom: 2%;
   color: #4a5568;
 }
 
 .form-group input,
 .form-group textarea {
   width: 100%;
-  padding: 0.5rem;
+  padding:  3%;
   border: 1px solid #cbd5e0;
   border-radius: 4px;
-  font-size: 1rem;
+  font-size: 100%;
 }
 
 .form-group input[type="file"] {
@@ -257,23 +259,23 @@ footer {
 .form-group input[type="radio"],
 .form-group input[type="checkbox"] {
   width: auto;
-  margin-right: 0.5rem;
+  margin-right: 5%;
 }
 
 .form-group .radio-group,
 .form-group .checkbox-group {
   display: flex;
   align-items: center;
-  gap: 1rem;
+  gap: 1%;
 }
 
 .submit-btn {
   background: linear-gradient(45deg, #6b46c1, #8a3fd5, #e53e3e);
   color: white;
-  padding: 0.75rem 1.5rem;
+  padding: 3% ;
   border: none;
   border-radius: 4px;
-  font-size: 1rem;
+  font-size: 100%;
   cursor: pointer;
   width: 100%;
   transition: background-color 0.3s ease;
@@ -281,6 +283,50 @@ footer {
 
 .submit-btn:hover {
   background-color: #3182ce;
+}
+
+/* Estilos para la sección de reseñas */
+.reviews-section {
+  background-color: #f7fafc;
+  padding: 4% 0;
+}
+
+.reviews-title {
+  text-align: center;
+  font-size: 200%;
+  color: #2d3748;
+  margin-bottom: 2%;
+}
+
+.reviews-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.review-card {
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 5%;
+  display: flex;
+  flex-direction: column;
+}
+
+.review-content {
+  flex-grow: 1;
+}
+
+.review-author {
+  font-weight: bold;
+  color: #4a5568;
+  margin-top: 1%;
+}
+
+.review-rating {
+  color: #f6ad55;
+  font-size: 100%;
+  margin-bottom: 2%;
 }
 
 /* Responsive */
@@ -304,15 +350,18 @@ footer {
     flex: 1 1 100%;
     max-width: 100%;
 }
+  .reviews-grid {
+                grid-template-columns: 1fr;
+            }
 }
-.map{
-  text-align: center;
-}
+
+
+/*Google Fonts*/
 /*<weight>: Use a value from 200 to 1000*/
 .cairo-play{
   font-family: "Cairo Play", serif;
   font-optical-sizing: auto;
-  font-weight: 200;
+  font-weight: 600;
   font-style: normal;
   font-variation-settings: "slnt" 0;
 }
@@ -332,6 +381,11 @@ footer {
     font-weight: 700;
     font-style: normal;
     font-variation-settings: "wdth" 100;
+  }
+  h3{
+    font-family: "Bungee Tint", sans-serif;
+    font-weight: 400;
+    font-style: normal;
   }
   .bungee-tint-regular {
     font-family: "Bungee Tint", sans-serif;
