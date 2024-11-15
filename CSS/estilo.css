@@ -3,9 +3,8 @@ margin: 0%;
 padding: 0%;
 box-sizing: border-box;
 transition: all 0.3s;
+}
 body, html {
-  margin: 0;
-  padding: 0;
   font-family: Arial, sans-serif;
   line-height: 1.6;
 }
@@ -116,6 +115,7 @@ nav {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   padding: 1.5rem;
   text-align: center;
+  margin-bottom: auto;
 }
 
 .card h3 {
@@ -391,4 +391,24 @@ footer {
     font-family: "Bungee Tint", sans-serif;
     font-weight: 400;
     font-style: normal;
+  }
+  .product_img-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f8f8f8;
+}
+
+  .product_img-box img {
+    width: 100%;
+  }
+  
+  .product_img-box span {
+    display: inline-block;
+    background: linear-gradient(45deg, #6b46c1, #8a3fd5, #e53e3e);
+    color: #fefeff;
+    padding: 2px 17px;
+    margin-top: -30px;
+    margin-bottom: 15px;
+    border-radius: 10px;
   }
