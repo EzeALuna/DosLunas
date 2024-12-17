@@ -50,8 +50,6 @@
 
 var cardContainer = document.getElementById('card');
 
-
-
 //cambiar color H2
 var tituloH2 = document.querySelector('h2');
 tituloH2.addEventListener("mouseover",()=>{
@@ -63,24 +61,3 @@ tituloH2.addEventListener("mouseover",()=>{
     var Fondo = document.querySelector('body');
     Fondo.style.backgroundColor= 'black';
  }
-
- //carrito de Compras
- var form = document.getElementById("formulario1");
-
- form.addEventListener("submit", function(event)
-{
-    event.preventDefault();
-
-    var nombre = document.getElementById("nombre").value;
-    var apellido = document.getElementById("apellido").value;
-    var edad = document.getElementById("edad").value;
-
-    //guardar datos en localStorage
-    localStorage.setItem("nombre",nombre);
-    localStorage.setItem("apellido",apellido);
-    localStorage.setItem("edad",edad);
-
-    //redirigir
-    window.location.href="carrito.html";
-});
-
