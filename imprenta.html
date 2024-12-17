@@ -3,23 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="imprenta, diseño gráfico, tarjetas, volantes, candy bar, san justo">
     <link rel="stylesheet" href="CSS/estilo.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bungee+Tint&family=Cairo+Play:wght@200..1000&family=Caveat+Brush&family=Honk&family=Kalnia+Glaze:wght@100..700&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/087fa2cc75.js" crossorigin="anonymous"></script>
-    <title>Dos Lunas</title>
+    <title>ImprentaDosLunas</title>
 </head>
 <body>
     <header>
         <nav class="container">
-            <a href="index.html" class="logo">Dos Lunas</a>
+            <div class="logo">
+                <a href="index.html " ><img src="/Img/logo.png" alt="logo" class="logoimg"></a>
+            </div>
             <div class="nav-links">
-                <a href="/digital.html">Digital</a>
-                <a href="/subliamdos.html">Sublimados</a>
+                <a href="/digital.html">Marketing Digital</a>
+                <a href="/sublimados.html">Sublimados</a>
                 <a href="/imprenta.html">Imprenta</a>
                 <a href="/diseño.html">Diseño Grafico</a>
-                <a href="/reseñas.html">Nuestros Clientes</a>
+                <a href="/clientes.html">Nuestros Clientes</a>
                 <a href="/contacto.html">Contacto</a>
             </div>
             <div class="menu-icon">&#9776;</div>
@@ -35,53 +37,54 @@
         </section>
 
         <section class="products-services">
-            <div class="container">
-                <h2>Nuestros Productos</h2>
+            <div class="container fondoImg">
+                <h2 class="hero">Nuestros Productos</h2>
                 <div class="card-grid">
                     <div class="card">
-                        <h3>Folletos</h3>
-                        <p>Creamos diseños únicos</p>
+                        <h3>Volantes</h3>
                         <div class="product_img-box">
-                            <img src="https://picsum.photos/200" alt="" />
+                            <h4>Volantes a tu medida</h4>
+                            <img src="/Img/volantes.jpg" alt="volantes" />
                             <span>Comprar</span>
                         </div>
                     </div>
                     <div class="card">
                         <h3>Candybar</h3>
-                        <p>Ofrecemos Candybar</p>
                         <div class="product_img-box">
-                            <img src="https://picsum.photos/200" alt="" />
+                            <h4>Candybar con diseños unicos</h4>
+                            <img src="/Img/candybar.jpg" alt="candybar" />
                             <span>Comprar</span>
                         </div>
                     </div>
                     <div class="card">
                         <h3>Tarjetas Promocionales</h3>
-                        <p>Creamos Tarjetas promocionales</p>
                         <div class="product_img-box">
-                            <img src="https://picsum.photos/200" alt="" />
+                            <h4>Tarjetas personalizadas</h4>
+                            <img src="/Img/tarjetas.jpg" alt="tarjetas" />
                             <span>Comprar</span>
                         </div>
                     </div>
                     <div class="card">
                         <h3>Impresión Rápida</h3>
-                        <p>Servicio de impresión express</p>
                         <div class="product_img-box">
-                            <img src="https://picsum.photos/200" alt="" />
+                            <h4>Impresiones express</h4>
+                            <img src="/Img/impresion.png" alt="impresiones" />
                             <span>Comprar</span>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
+
     </main>
 
     <footer>
         <div class="container">
             <div class="footer-content">
                 <div class="footer-section">
-                    <h2>Dos Lunas</h2>
-                    <ul>
-                        <li><a href="#">Nosotros</a></li>
+                    <div class="logo">
+                        <img src="/Img/logo.png" alt="logo" class="logoimg">
+                    </div>                    <ul>
                         <li><a href="/contacto.html">Contacto</a></li>
                         <li>
                            <a href=""><i class="fa-brands fa-square-whatsapp fa-bounce" style="color: #f05400; height:10vh"></i></a> 
@@ -97,24 +100,7 @@
         </div>
     </footer>
 
-    <script>
-        // Toggle menu for mobile
-        const menuIcon = document.querySelector('.menu-icon');
-        const navLinks = document.querySelector('.nav-links');
-
-        menuIcon.addEventListener('click', () => {
-            navLinks.style.display = navLinks.style.display === 'flex' ? 'none' : 'flex';
-        });
-
-        // Smooth scroll for navigation links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                document.querySelector(this.getAttribute('href')).scrollIntoView({
-                    behavior: 'smooth'
-                });
-            });
-        });
-    </script>
+    <script src="/JS/script.js"></script>
+    <script src="https://kit.fontawesome.com/087fa2cc75.js" crossorigin="anonymous"></script>
 </body>
 </html>

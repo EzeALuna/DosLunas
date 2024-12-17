@@ -3,23 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="invitaciones digitales, community manager, software, paginas webs, san justo">
     <link rel="stylesheet" href="CSS/estilo.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bungee+Tint&family=Cairo+Play:wght@200..1000&family=Caveat+Brush&family=Honk&family=Kalnia+Glaze:wght@100..700&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/087fa2cc75.js" crossorigin="anonymous"></script>
-    <title>Dos Lunas</title>
+    <title>MarketingDigitalDosLunas</title>
 </head>
 <body>
     <header>
         <nav class="container">
-            <a href="index.html" class="logo">Dos Lunas</a>
+            <div class="logo">
+                <a href="index.html " ><img src="/Img/logo.png" alt="logo" class="logoimg"></a>
+            </div>
             <div class="nav-links">
-                <a href="/digital.html">Digital</a>
-                <a href="/subliamdos.html">Sublimados</a>
+                <a href="/digital.html">Marketing Digital</a>
+                <a href="/sublimados.html">Sublimados</a>
                 <a href="/imprenta.html">Imprenta</a>
                 <a href="/diseño.html">Diseño Grafico</a>
-                <a href="/reseñas.html">Nuestros Clientes</a>
+                <a href="/clientes.html">Nuestros Clientes</a>
                 <a href="/contacto.html">Contacto</a>
             </div>
             <div class="menu-icon">&#9776;</div>
@@ -37,39 +40,39 @@
         </section>
 
         <section class="products-services">
-            <div class="container">
+            <div class="container fondoImg">
                 <h2 class="hero">Nuestros Servicios</h2>
                 <div class="card-grid">
                     <div class="card">
-                        <h3>Creación de Webs</h3>
-                        <p>Creamos Webs</p>
+                        <h3>Paginas Webs</h3>
                         <div class="product_img-box">
+                            <h4>Pagina web</h4>
                             <img src="/Img/webs.jfif" alt="" />
-                            <span>Mas Informacion</span>
+                            <a href="web.html"><span>Mas Informacion</span></a>
                         </div>
                     </div>
                     <div class="card">
                         <h3>Invitaciones Digitales</h3>
-                        <p>Invitaciones Digitales</p>
                         <div class="product_img-box">
+                            <h4>Invitaciones Digitales</h4>
                             <img src="/Img/invitacion.jfif" alt="" />
-                            <span>Mas Informacion</span>
+                            <a href="invitacion.html"><span>Mas Informacion</span></a>
                         </div>
                     </div>
                     <div class="card">
                         <h3>Community Manager</h3>
-                        <p>Servicio de Community Manager</p>
                         <div class="product_img-box">
+                            <h4>Manejamos tu resdes</h4>
                             <img src="/Img/community-manager2.png" alt="" />
-                            <span>Mas Informacion</span>
+                            <a href="community.html"><span>Mas Informacion</span></a>
                         </div>
                     </div>
                     <div class="card">
                         <h3>Software de Gestion</h3>
-                        <p>Software de Gestion</p>
                         <div class="product_img-box">
+                            <h4>Programas para gestionar tu negocio</h4>
                             <img src="/Img/software.jpg" alt="" />
-                            <span>Mas Informacion</span>
+                            <a href="software.html"><span>Mas Informacion</span></a>
                         </div>
                     </div>
                 </div>
@@ -81,9 +84,9 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-section">
-                    <h2>Dos Lunas</h2>
-                    <ul>
-                        <li><a href="#">Nosotros</a></li>
+                    <div class="logo">
+                        <img src="/Img/logo.png" alt="logo" class="logoimg">
+                    </div>                    <ul>
                         <li><a href="/contacto.html">Contacto</a></li>
                         <li>
                            <a href=""><i class="fa-brands fa-square-whatsapp fa-bounce" style="color: #f05400; height:10vh"></i></a> 
@@ -99,24 +102,6 @@
         </div>
     </footer>
 
-    <script>
-        // Toggle menu for mobile
-        const menuIcon = document.querySelector('.menu-icon');
-        const navLinks = document.querySelector('.nav-links');
-
-        menuIcon.addEventListener('click', () => {
-            navLinks.style.display = navLinks.style.display === 'flex' ? 'none' : 'flex';
-        });
-
-        // Smooth scroll for navigation links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                document.querySelector(this.getAttribute('href')).scrollIntoView({
-                    behavior: 'smooth'
-                });
-            });
-        });
-    </script>
+    <script src="/JS/script.js"></script>
 </body>
 </html>

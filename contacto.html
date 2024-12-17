@@ -8,18 +8,20 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bungee+Tint&family=Cairo+Play:wght@200..1000&family=Caveat+Brush&family=Honk&family=Kalnia+Glaze:wght@100..700&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/087fa2cc75.js" crossorigin="anonymous"></script>
-    <title>Dos Lunas</title>
+    <title>ContactoDosLunas</title>
 </head>
 <body>
     <header>
-        <nav class="container">
-            <a href="index.html" class="logo">Dos Lunas</a>
+        <nav class="container ">
+            <div class="logo">
+                <a href="index.html " ><img src="/Img/logo.png" alt="logo" class="logoimg"></a>
+            </div>
             <div class="nav-links">
-                <a href="/digital.html">Digital</a>
-                <a href="/subliamdos.html">Sublimados</a>
+                <a href="/digital.html">Marketing Digital</a>
+                <a href="/sublimados.html">Sublimados</a>
                 <a href="/imprenta.html">Imprenta</a>
                 <a href="/diseño.html">Diseño Grafico</a>
-                <a href="/reseñas.html">Nuestros Clientes</a>
+                <a href="/clientes.html">Nuestros Clientes</a>
                 <a href="/contacto.html">Contacto</a>
             </div>
             <div class="menu-icon">&#9776;</div>
@@ -28,14 +30,13 @@
     <main>
         <section class="hero">
             <div class="container">
-                <h1>Conctacto </h1>
-                <p>Transformamos tus ideas en realidad con nuestros servicios de diseño e impresión de alta calidad.</p>
+                <h1>Contacto </h1>
+                <p>Envianos tu consulta</p>
             </div>
         </section>
 
-        <div class="container">
+        <div class="container fondoImg">
             <form class="contact-form" action="https://formspree.io/f/xpwzrrww" method="POST">
-                <h2>Contáctanos</h2>
                 <div class="form-group">
                     <label for="nombre">Nombre</label>
                     <input type="text" name="nombre" id="nombre" placeholder="Escribe tu nombre" required>
@@ -56,11 +57,12 @@
                     <label for="mensaje">Mensaje</label>
                     <textarea name="mensaje" id="mensaje" rows="4" placeholder="Escribe tu consulta" required></textarea>
                 </div>
-                <div class="form-group">
+                <!--<div class="form-group">
                     <label>Tipo de mensaje</label>
                     <div class="radio-group">
-                        <input type="radio" id="cotizar" name="tipo_mensaje" value="Cotizar" checked>
+                        <input type="radio" id="cotizar" name="tipo_mensaje" value="Cotizar" >
                         <label for="cotizar">Cotizar</label>
+                        <label style="margin: 10%;"></label>
                         <input type="radio" id="consulta" name="tipo_mensaje" value="Consulta">
                         <label for="consulta">Consulta</label>
                     </div>
@@ -68,18 +70,19 @@
                 <div class="form-group">
                     <label>Responder por:</label>
                     <div class="checkbox-group">
-                        <input type="checkbox" id="respuesta_cel" name="respuesta" value="Cel">
-                        <label for="respuesta_cel">Cel</label>
+                        <input type="checkbox" id="respuesta_cel" name="respuesta" value="Cel" checked>
+                        <label for="respuesta_cel">Cel</label> <br>
+                        <label style="margin: 10%;"></label>
                         <input type="checkbox" id="respuesta_email" name="respuesta" value="Email">
                         <label for="respuesta_email">Email</label>
                     </div>
-                </div>
+                </div>-->
                 <button type="submit" class="submit-btn">Enviar</button>
             </form>
         </div>
 
     <div class="map">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3281.337503060473!2d-58.572380472652966!3d-34.671430484321064!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc7cca5322943%3A0x61f80a297932f21a!2sDoctor%20Ignacio%20Arieta%20%26%20Venezuela%2C%20B1754%20San%20Justo%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1731537687249!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3281.337503060473!2d-58.572380472652966!3d-34.671430484321064!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc7cca5322943%3A0x61f80a297932f21a!2sDoctor%20Ignacio%20Arieta%20%26%20Venezuela%2C%20B1754%20San%20Justo%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1731537687249!5m2!1ses-419!2sar" width="80%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
    
     </main>
@@ -87,9 +90,9 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-section">
-                    <h2>Dos Lunas</h2>
-                    <ul>
-                        <li><a href="#">Nosotros</a></li>
+                    <div class="logo">
+                        <img src="/Img/logo.png" alt="logo" class="logoimg">
+                    </div>                    <ul>
                         <li><a href="/contacto.html">Contacto</a></li>
                         <li>
                            <a href=""><i class="fa-brands fa-square-whatsapp fa-bounce" style="color: #f05400; height:10vh"></i></a> 
@@ -105,24 +108,6 @@
         </div>
     </footer>
 
-    <script>
-        // Toggle menu for mobile
-        const menuIcon = document.querySelector('.menu-icon');
-        const navLinks = document.querySelector('.nav-links');
-
-        menuIcon.addEventListener('click', () => {
-            navLinks.style.display = navLinks.style.display === 'flex' ? 'none' : 'flex';
-        });
-
-        // Smooth scroll for navigation links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                document.querySelector(this.getAttribute('href')).scrollIntoView({
-                    behavior: 'smooth'
-                });
-            });
-        });
-    </script>
+    <script src="/JS/script.js"></script>
 </body>
 </html>

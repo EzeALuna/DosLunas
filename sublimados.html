@@ -3,23 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="sablimados, sublimación, tazas personalizadas, remeras personalizadas, san justo">
     <link rel="stylesheet" href="CSS/estilo.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bungee+Tint&family=Cairo+Play:wght@200..1000&family=Caveat+Brush&family=Honk&family=Kalnia+Glaze:wght@100..700&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/087fa2cc75.js" crossorigin="anonymous"></script>
-    <title>Dos Lunas</title>
+    <title>SublimadosDosLunas</title>
 </head>
 <body>
     <header>
         <nav class="container">
-            <a href="index.html" class="logo">Dos Lunas</a>
+            <div class="logo">
+                <a href="index.html " ><img src="/Img/logo.png" alt="logo" class="logoimg"></a>
+            </div>
             <div class="nav-links">
-                <a href="/digital.html">Digital</a>
-                <a href="/subliamdos.html">Sublimados</a>
+                <a href="/digital.html">Marketing Digital</a>
+                <a href="/sublimados.html">Sublimados</a>
                 <a href="/imprenta.html">Imprenta</a>
                 <a href="/diseño.html">Diseño Grafico</a>
-                <a href="/reseñas.html">Nuestros Clientes</a>
+                <a href="/clientes.html">Nuestros Clientes</a>
                 <a href="/contacto.html">Contacto</a>
             </div>
             <div class="menu-icon">&#9776;</div>
@@ -37,38 +40,38 @@
         </section>
 
         <section class="products-services">
-            <div class="container">
-                <h2>Nuestros Productos</h2>
+            <div class="container fondoImg">
+                <h2 class="hero">Nuestros Productos</h2>
                 <div class="card-grid">
                     <div class="card">
                         <h3>Remeras</h3>
-                        <p>Remeras</p>
                         <div class="product_img-box">
-                            <img src="https://picsum.photos/200" alt="" />
+                            <h4>Remeras personalizadas</h4>
+                            <img src="/Img/sublimados.jfif" alt="" />
                             <span>Mas Informacion</span>
                         </div>
                     </div>
                     <div class="card">
                         <h3>Vasos</h3>
-                        <p>Ofrecemos Vasos</p>
                         <div class="product_img-box">
-                            <img src="https://picsum.photos/200" alt="" />
+                            <h4>Vasos personalizados</h4>
+                            <img src="/Img/vasosSubliamdos.jfif" alt="" />
                             <span>Mas Informacion</span>
                         </div>
                     </div>
                     <div class="card">
-                        <h3>Accesorios</h3>
-                        <p>Accesorios</p>
+                        <h3>Bolsas</h3>
                         <div class="product_img-box">
-                            <img src="https://picsum.photos/200" alt="" />
+                            <h4>Bolsa personalizadas</h4>
+                            <img src="/Img/bolsas.jfif" alt="" />
                             <span>Mas Informacion</span>
                         </div>
                     </div>
                     <div class="card">
                         <h3>Muchas cosas mas</h3>
-                        <p>Muchas cosas mas para tu negocio</p>
                         <div class="product_img-box">
-                            <img src="https://picsum.photos/200" alt="" />
+                            <h4>Mira todos nuestros articulos</h4>
+                            <img src="/Img/masproductos.jpg" alt="" />
                             <span>Mas Informacion</span>
                         </div>
                     </div>
@@ -81,9 +84,9 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-section">
-                    <h2>Dos Lunas</h2>
-                    <ul>
-                        <li><a href="#">Nosotros</a></li>
+                    <div class="logo">
+                        <img src="/Img/logo.png" alt="logo" class="logoimg">
+                    </div>                    <ul>
                         <li><a href="/contacto.html">Contacto</a></li>
                         <li>
                            <a href=""><i class="fa-brands fa-square-whatsapp fa-bounce" style="color: #f05400; height:10vh"></i></a> 
@@ -99,24 +102,6 @@
         </div>
     </footer>
 
-    <script>
-        // Toggle menu for mobile
-        const menuIcon = document.querySelector('.menu-icon');
-        const navLinks = document.querySelector('.nav-links');
-
-        menuIcon.addEventListener('click', () => {
-            navLinks.style.display = navLinks.style.display === 'flex' ? 'none' : 'flex';
-        });
-
-        // Smooth scroll for navigation links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                document.querySelector(this.getAttribute('href')).scrollIntoView({
-                    behavior: 'smooth'
-                });
-            });
-        });
-    </script>
+    <script src="/JS/script.js"></script>
 </body>
 </html>

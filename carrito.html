@@ -1,21 +1,22 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
+    <meta name="keywords" content="imprenta, sublimación, diseño gráfico, creacion de paginas webs, san justo">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="keywords" content="logos, creación de logos, diseño gráfico, logotipos, san justo">
     <link rel="stylesheet" href="CSS/estilo.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bungee+Tint&family=Cairo+Play:wght@200..1000&family=Caveat+Brush&family=Honk&family=Kalnia+Glaze:wght@100..700&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/087fa2cc75.js" crossorigin="anonymous"></script>
-    <title>DiseñoDosLunas</title>
+    <link rel="shortcut icon" href="/Img/icon.png" />
+    <title>ImprentaDosLunas</title>
 </head>
 <body>
     <header>
         <nav class="container">
             <div class="logo">
-                <a href="index.html " ><img src="/Img/logo.png" alt="logo" class="logoimg"></a>
+            <a href="index.html " ><img src="/Img/logo.png" alt="logo" class="logoimg"></a>
             </div>
             <div class="nav-links">
                 <a href="/digital.html">Marketing Digital</a>
@@ -31,36 +32,32 @@
 
     <main>
         <section class="hero">
-            <div class="container ">
-                <h1>Diseño Grafico</h1>
-                <p>Transformamos tus ideas en realidad con nuestros servicios de diseño e impresión de alta calidad.</p>
+            <div class="container">
+                <h1>Carrito de Compras</h1>
             </div>
         </section>
 
-        <section class="products-services">
-            <div class="container fondoImg">
-                <h2 class="hero">Nuestros Productos</h2>
-                <div class="card-grid">
-                    <div class="card">
-                        <h3>Diseño Gráfico</h3>
-                        <div class="product_img-box">
-                            <h4>Diseños unicos</h4>
-                            <img src="/Img/diseñoGrafico.jfif" alt="diseñadora grafica" />
-                            <span>Mas Informacion</span>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <h3>Creación de Logos</h3>
-                        <div class="product_img-box">
-                            <h4>Tene tu propio Logo</h4>
-                            <img src="/Img/logos.jfif" alt="creadro de logos" />
-                            <span>Mas Informacion</span>
-                        </div>
-                    </div>
- 
-                </div>
+        <table class="table">
+            <thead class="thead-dark">
+                <tr>
+                    <th>Productos</th>
+                    <th>Precio</th>
+                    <th>Cantidad</th>
+                    <th>Subtotal</th>
+                </tr>
+            </thead>
+            <tbody id="carrito-item">
+
+            </tbody>
+
+            <div class="text-end mb-3">
+            <h4>Total: $ <span id="total">0</span></h4>
+
             </div>
-        </section>
+        </table>
+       <button type="button" id="limpiarcarrito">Volver</button>
+       <button type="button" class="botoncarrito">Comprar</button>
+
     </main>
 
     <footer>
@@ -69,10 +66,11 @@
                 <div class="footer-section">
                     <div class="logo">
                         <img src="/Img/logo.png" alt="logo" class="logoimg">
-                    </div>                    <ul>
-                        <li><a href="/contacto.html">Contacto</a></li>
+                    </div>
+                    <ul>
+                        <li><a href="/contacto.html"><h2>Contacto</h2></a></li>
                         <li>
-                           <a href=""><i class="fa-brands fa-square-whatsapp fa-bounce" style="color: #f05400; height:10vh"></i></a> 
+                           <a href=""><i class="fa-brands fa-square-whatsapp fa-bounce" style="color: #f05400; height:10vh" ></i></a> 
                            <a href=""><i class="fa-brands fa-tiktok fa-bounce" style="color: #74C0FC; height:10vh"></i></a> 
                            <a href=""><i class="fa-brands fa-square-instagram fa-bounce" style="color: #ffd43b; height:10vh"></i></li></a> 
                     </ul>
@@ -86,5 +84,7 @@
     </footer>
 
     <script src="/JS/script.js"></script>
+    <script src="/JS/funcionCarrito.js"></script>
+    <script src="/JS/funcionesIndex.js"></script>
 </body>
 </html>
