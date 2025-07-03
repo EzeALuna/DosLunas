@@ -61,3 +61,63 @@ tituloH2.addEventListener("mouseover",()=>{
     var Fondo = document.querySelector('body');
     Fondo.style.backgroundColor= 'black';
  }
+
+ //consumo API
+ fetch("http://localhost:8080/productos")
+  .then(response => response.json())
+  .then(productos => {
+    mostrarProductosEnLaPantalla(productos);
+  })
+  .catch(error => console.error(error));
+
+  //ResponseEntity crearProducto
+  fetch("http://localhost:8080/productos", {
+  method: "POST",
+  headers: {
+    "Content-Type": "application/json"
+  },
+  body: JSON.stringify(producto)
+})
+.then(response => response.json())
+.then(nuevoProducto => {
+  // Manejar la respuesta (e.g., actualizar la lista)
+})
+.catch(error => console.error(error));
+
+//ResponseEntity<List<producto>>
+fetch("http://localhost:8080/productos")
+  .then(response => response.json())
+  .then(productos => {
+    mostrarProductosEnLaPantalla(productos);
+  })
+  .catch(error => console.error(error));
+
+  //ResponseEntity actualizar
+  fetch("http://localhost:8080/productos/1", {
+  method: "PUT",
+  headers: {
+    "Content-Type": "application/json"
+  },
+  body: JSON.stringify(producto)
+})
+.then(response => response.json())
+.then(productoActualizado => {
+  // Manejar la respuesta (e.g., actualizar la lista)
+})
+.catch(error => console.error(error));
+
+//ResponseEntity eliminar
+fetch("http://localhost:8080/productos/1", {
+  method: "DELETE",
+  headers: {
+    "Content-Type": "application/json"
+  }
+})
+.then(response => {
+  if (response.status === 204) {
+    // Manejar la respuesta (e.g., actualizar la lista)
+  } else {
+    console.error("Error al eliminar el producto");
+  }
+})
+.catch(error => console.error(error));
